@@ -2,7 +2,7 @@
  *  Project: jQuery Media Comments
  *  Description: jQuery pluggin to add media query functionality to HTML comments
  *  Author: Steve Podmore (https://twitter.com/StevenPodmore)
- *  License: MIT
+ *  License: 
  */
 
 ;(function ( $, window, document, undefined ) {
@@ -92,9 +92,15 @@
 
 
     $.fn[mediacomments] = function ( options ) {
+        var args = Array.prototype.slice.call(arguments, 1);
         return this.each(function () {
-            if (!$.data(this, "plugin_" + mediacomments)) {
-                $.data(this, "plugin_" + mediacomments, new Plugin( this, options ));
+            var item = $(this), instance = item.data('mediacomments');
+            if (!instance) {
+                item.data(mediacomments, new Plugin( this, options ));
+            } else {
+                if(typeof options === 'string') {
+                    instance[options].apply(instance, args);
+                }
             }
         });
     };
