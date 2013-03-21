@@ -108,7 +108,11 @@ section, header {
 .mctest div {
     width:100%;
 }
-
+@media only all and (max-width:400px){
+    h1{
+        font-size: 20px;
+    }
+}
 
 
 
