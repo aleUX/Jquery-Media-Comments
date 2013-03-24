@@ -1,13 +1,13 @@
 {
-	"name": "jquery-media-comments",
+	"name": "mediacomments",
 	"title": "jQuery Media Comments",
 	"description": "jQuery plugin to add media query support to conventional html comments.",
 	"keywords": [
-		"Media Query",
-		"Media Comments",
+		"MediaQuery",
+		"MediaComments",
 		"Responsive",
 		"Breakpoints",
-		"CSS3 Media Query"
+		"CSS3"
 	],
 	"version": "0.0.1",
 	"author": {
