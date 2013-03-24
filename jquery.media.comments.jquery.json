@@ -1,0 +1,35 @@
+{
+	"name": "jquery-media-comments",
+	"title": "jQuery Media Comments",
+	"description": "jQuery plugin to add media query support to conventional html comments.",
+	"keywords": [
+		"Media Query",
+		"Media Comments",
+		"CSS3 Media Query"
+	],
+	"version": "0.0.1",
+	"author": {
+		"name": "Steve Podmore",
+		"url": "https://twitter.com/StevePodders"
+	},
+	"maintainers": [
+		{
+			"name": "Steve Podmore",
+			"email": "stevenpodmore@hotmail.com",
+			"url": ""
+		}
+	],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://opensource.org/licenses/MIT"
+		}
+		],
+	"bugs": "https://github.com/Podders/Jquery-Media-Comments/issues",
+	"homepage": "https://github.com/Podders/Jquery-Media-Comments",
+	"docs": "https://github.com/Podders/Jquery-Media-Comments",
+	"download": "https://github.com/Podders/Jquery-Media-Comments",
+	"dependencies": {
+		"jquery": ">=1.4"
+	}
+}
