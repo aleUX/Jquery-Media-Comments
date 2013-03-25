@@ -2,7 +2,7 @@
 
 Why?
 
-Good question, this is more of a proof of concept, although a similar end result is obtained using Response.js, this takes a slightly different approach in that it adds media query capability to conventional html comments,
+Good question, this is more of a proof of concept, although a similar end result is obtained using Response.js, this takes a slightly different approach in that it adds media query capability to conventional html comments, this allows for no critical elements to be injected into the dom only when required, assets of the elements also do not get loaded until the Media Query is satified and the element is inserted into the dom.
 
 ##Instalation
 
@@ -31,6 +31,10 @@ The plugin will scan the dom for comments that contain a media query then inject
 ## Options
 
 Currently just a single option to set the timeout that the plugin should wait after the window resize event has finnished before firing, this was put in place to stop the wondow.resize event firing thousands of times during a window resize
+
+## Limitations
+
+Because jQuery Media Comments is based on html comments we are still bound by the rules of html, comments cannot be nested and so neither can Media Comment.
 
 ## Author
 [Steve Podmore](https://github.com/Podders)
